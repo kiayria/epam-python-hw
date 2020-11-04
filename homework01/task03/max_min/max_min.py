@@ -12,9 +12,17 @@ from typing import Tuple
 
 
 def find_maximum_and_minimum(file_name: str) -> Tuple[int, int]:
-    numbers = []
+    max_element = None
+    min_element = None
     with open(file_name) as fi:
         for line in fi:
-            numbers.append(int(line))
-    numbers.sort()
-    return numbers[0], numbers[-1]
+            n = int(line)
+            if max_element is None:
+                max_element = n
+            elif n > max_element:
+                max_element = n
+            if min_element is None:
+                min_element = n
+            elif n < min_element:
+                min_element = n
+    return min_element, max_element

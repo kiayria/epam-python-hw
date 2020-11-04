@@ -13,7 +13,7 @@ def find_maximal_subarray_sum(nums: List[int], k: int) -> int:
     if len(nums) == 0:
         return 0
     if k <= 0:
-        return -1
+        raise ValueError("k must be greater than 0.")
     max_sum = nums[0]
     for n in range(1, min(k, len(nums)) + 1):
         for i in range(len(nums) - n + 1):

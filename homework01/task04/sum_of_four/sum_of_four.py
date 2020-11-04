@@ -21,11 +21,3 @@ def check_sum_of_four(a: List[int], b: List[int], c: List[int], d: List[int]) ->
             if -(i + j) in sum_of_two:
                 tuple_count += sum_of_two[-(i + j)]
     return tuple_count
-
-
-a = [0, 2]
-b = [1, 2]
-c = [3, -2]
-d = [4, 2]
-n = check_sum_of_four(a, b, c, d)
-print(n)

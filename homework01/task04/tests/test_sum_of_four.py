@@ -1,7 +1,7 @@
 from typing import List
 
 import pytest
-from zero_tuples.sum_of_four import check_sum_of_four
+from sum_of_four.sum_of_four import check_sum_of_four
 
 
 @pytest.mark.parametrize(
