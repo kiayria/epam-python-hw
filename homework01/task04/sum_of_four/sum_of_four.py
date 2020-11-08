@@ -8,16 +8,11 @@ from typing import List
 
 
 def check_sum_of_four(a: List[int], b: List[int], c: List[int], d: List[int]) -> int:
-    sum_of_two = {}
-    for i in a:
-        for j in b:
-            if i + j not in sum_of_two:
-                sum_of_two[i + j] = 1
-            else:
-                sum_of_two[i + j] += 1
-    tuple_count = 0
-    for i in c:
-        for j in d:
-            if -(i + j) in sum_of_two:
-                tuple_count += sum_of_two[-(i + j)]
-    return tuple_count
+    result = [[]]
+    for pool in a, b, c, d:
+        result = [x + [y] for x in result for y in pool]
+    counter = 0
+    for r in result:
+        if sum(r) == 0:
+            counter += 1
+    return counter

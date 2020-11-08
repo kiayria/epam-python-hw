@@ -5,14 +5,6 @@ import pytest
 from max_min.max_min import find_maximum_and_minimum
 
 
-def create_temporary_txt(filename: str, data: List[int]):
-    f = open(filename, "w+")
-    for i in data:
-        f.write(str(i) + "\n")
-    f.close()
-    return filename
-
-
 @pytest.mark.parametrize(
     ["file_name", "expected_result"],
     [

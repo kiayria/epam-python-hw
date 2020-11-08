@@ -1,0 +1,15 @@
+Rose - роза
+Lily - лилия
+Peony - пион
+Popy - мак
+Tulip - тюльпан
+Orchid - орхидея
+Daisy - маргаритка
+Aster - астра
+Gladiolus - гладиолус
+Dahlia - георгина
+Violet - фиалка
+Lily of the valley - ландыш
+Chrysanthemum - хризантема
+Calla - калла
+Carnation - гвоздика
