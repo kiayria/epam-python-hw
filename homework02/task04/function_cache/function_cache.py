@@ -10,6 +10,7 @@ val_1 = cache_func(*some)
 val_2 = cache_func(*some)
 assert val_1 is val_2
 """
+import pickle
 from collections.abc import Callable
 
 
@@ -17,10 +18,9 @@ def cache(func: Callable) -> Callable:
     cached = dict()
 
     def cached_func(*args):
-        if args in cached:
-            return cached[args]
-        result = func(*args)
-        cached[args] = result
-        return result
+        hash = pickle.dumps(args)
+        if hash not in cached:
+            cached[hash] = func(*args)
+        return cached[hash]
 
     return cached_func
