@@ -30,25 +30,6 @@ def cache_counter(times: int) -> Callable:
     return cache
 
 
-@cache_counter(times=3)
-def fibonacci(n):
-    if n in (1, 2):
-        return 1
-    return fibonacci(n - 1) + fibonacci(n - 2)
-
-
 @cache_counter(times=2)
 def test_input():
     return input("? ")
-
-
-# if __name__ == '__main__':
-#     for i in range(10):
-#         # print(test_input())
-#         start = time.time()
-#         fibonacci(50)
-#         print(f'{i} time: {time.time() - start}')
-
-start = time.time()
-print(fibonacci(51))
-print(time.time() - start)
