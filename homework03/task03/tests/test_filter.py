@@ -35,7 +35,7 @@ from filter.filter import make_filter
         ),
     ],
 )
-def test_is_armstrong(keywords: Dict, data: List, expected_result: List):
+def test_filter(keywords: Dict, data: List, expected_result: List):
     actual_result = make_filter(**keywords).apply(data)
 
     assert actual_result == expected_result
