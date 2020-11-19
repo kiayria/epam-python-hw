@@ -27,11 +27,10 @@ def count_dots_on_i(url: str) -> int:
         page = urllib.request.urlopen(url)
     except urllib.error.URLError:
         raise ValueError(f"Unreachable {url}")
-        exit()
     counter = 0
-    for line in page:
-        line_dec = line.decode()
-        for c in line_dec:
+    content = page.read().decode()
+    for line in content:
+        for c in line:
             if c == "i":
                 counter += 1
     return counter

@@ -18,4 +18,5 @@ def is_armstrong(number: int) -> bool:
         return False
     else:
         digits = list(map(int, str(number)))
-        return number == sum([d ** len(digits) for d in digits])
+        length = len(digits)
+        return number == sum([d ** length for d in digits])

@@ -1,12 +1,21 @@
-import pytest
+from unittest.mock import patch
+
 from count_dots.count_dots import count_dots_on_i
 
 
-def test_count_dots_positive():
-    actual_result = count_dots_on_i("https://example.com/")
-    assert actual_result == 59
+class HttpResponse:
+    def __init__(self, content):
+        self.content = content
+
+    def read(self):
+        return bytes(self.content, "utf-8")
+
+    def decode(self):
+        return self.content
 
 
-def test_count_dots_negative():
-    with pytest.raises(ValueError):
-        count_dots_on_i("https://example.com/faq")
+@patch("urllib.request.urlopen")
+def test_count_dots(mock_obj):
+    mock_obj.return_value = HttpResponse("this is not real content of a page")
+    result = count_dots_on_i("https://www.example.com/")
+    assert result == 2
