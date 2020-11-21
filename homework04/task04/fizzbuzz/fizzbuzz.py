@@ -28,9 +28,6 @@ from typing import List
 def fizzbuzz(n: int) -> List[str]:
     """
     A function that returns a list of strings with N FizzBuzz numbers.
-    To run doctests:
-        python3 -m doctest -v fizzbuzz.py
-        pytest --doctest-modules tests/test_fizz_buzz.py fizzbuzz/fizzbuzz.py
 
     >>> fizzbuzz(5)
     ['1', '2', 'fizz', '4', 'buzz']
