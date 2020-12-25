@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Boeing Co.",
+    "abbr": "BA",
+    "pe_ratio": -95.58
+  },
+  {
+    "name": "Hess Corp",
+    "abbr": "HES",
+    "pe_ratio": -69.69
+  },
+  {
+    "name": "DXC Technology",
+    "abbr": "DXC",
+    "pe_ratio": 2.58
+  },
+  {
+    "name": "Unum Group",
+    "abbr": "UNM",
+    "pe_ratio": 5.28
+  },
+  {
+    "name": "American Airlines Inc",
+    "abbr": "AAL",
+    "pe_ratio": 5.84
+  },
+  {
+    "name": "Hewlett Packard Enterprise Co.",
+    "abbr": "HPE",
+    "pe_ratio": 6.23
+  },
+  {
+    "name": "Invesco Ltd",
+    "abbr": "IVZ",
+    "pe_ratio": 7.08
+  },
+  {
+    "name": "United Airlines Holdings Inc Registered Shs",
+    "abbr": "UAL",
+    "pe_ratio": 7.31
+  },
+  {
+    "name": "General Motors",
+    "abbr": "GM",
+    "pe_ratio": 7.59
+  },
+  {
+    "name": "Franklin Resources Inc.",
+    "abbr": "BEN",
+    "pe_ratio": 7.73
+  }
+]

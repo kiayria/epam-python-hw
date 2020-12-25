@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Tesla",
+    "abbr": "TSLA",
+    "weekly_growth": 65689.87
+  },
+  {
+    "name": "Apache Corp.",
+    "abbr": "APA",
+    "weekly_growth": 57947.78
+  },
+  {
+    "name": "Norwegian Cruise Line Ltd",
+    "abbr": "NCLH",
+    "weekly_growth": 55295.6
+  },
+  {
+    "name": "Royal Caribbean Cruises Ltd.",
+    "abbr": "RCL",
+    "weekly_growth": 44368.54
+  },
+  {
+    "name": "Carnival Corp & plc paired",
+    "abbr": "CCL",
+    "weekly_growth": 41697.2
+  },
+  {
+    "name": "ONEOK Inc (New)",
+    "abbr": "OKE",
+    "weekly_growth": 40185.04
+  },
+  {
+    "name": "Halliburton Co.",
+    "abbr": "HAL",
+    "weekly_growth": 36793.73
+  },
+  {
+    "name": "MGM Resorts International",
+    "abbr": "MGM",
+    "weekly_growth": 35854.15
+  },
+  {
+    "name": "Devon Energy Corp.",
+    "abbr": "DVN",
+    "weekly_growth": 34917.53
+  },
+  {
+    "name": "Occidental Petroleum Corp.",
+    "abbr": "OXY",
+    "weekly_growth": 33727.4
+  }
+]
