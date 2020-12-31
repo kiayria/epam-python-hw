@@ -4,3 +4,6 @@ pytest-sugar
 
 aiohttp~=3.7.3
 beautifulsoup4~=4.9.3
+sqlalchemy~=1.3.22
+
+alembic~=1.4.3
